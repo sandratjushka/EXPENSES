@@ -4,7 +4,7 @@ describe('Expenses App', () => {
   });
 
   it("can find elements", () => {
-    cy.get(".expense-item").should('have.length', 0);
+    cy.get(".expense-item").should('have.length', 2);
     cy.get(".expense-item h2").first().should('have.text', "Kass");
     cy.get(".expense-item h2").last().should("contain.text", "Elevant");
   });
