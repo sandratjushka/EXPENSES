@@ -10,7 +10,7 @@ describe('Expenses App', () => {
   });
 
   it('should filter elements', () => {
-    cy.get(".expenses-filter select").select(1);
+    cy.get(".expenses-filter select").select(0);
     cy.get(".expense-item").should("have.length", 2);
     cy.get(".expense-item")
       .find(".expense-date__year")
